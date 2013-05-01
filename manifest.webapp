@@ -1,0 +1,13 @@
+{
+  "name": "Lungo Boilerplate",
+  "description": "Lungo Boilerplate para Firefox OS",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon.png"
+  },
+  "developer": {
+    "name": "Nukeador",
+    "url": "http://www.mozilla-hispano.org/labs/"
+  },
+  "default_locale": "es"
+}

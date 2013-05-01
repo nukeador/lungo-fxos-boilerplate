@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo Firefox OS App</title>
+    <meta name="description" content="">
+    <meta name="author" content="Rubén Martín (@nukeador)">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+</head>
+
+<body class="app">
+    
+    <!-- Inicio de tu app -->
+    <section id="main" data-transition="slide">
+        
+        <header data-title="Inicio">
+            <nav class="right">
+                <a id="install" href="#" data-icon="plus"></a>
+            </nav>
+        </header>
+        
+        <article id="main-article" class="active list">
+            <ul>
+                <li><strong>Título</strong>
+                    <br />
+                    Este es mi texto</li>
+            </ul>
+        </article>
+        
+        <article id="article2" class="list indented">
+            <ul>
+                <li>Este es el texto 2</li>
+            </ul>
+        </article>
+        
+        <footer>
+            <nav>
+                <a href="#main-article" data-icon="home" class="active" data-router="article"></a>
+                <a href="#article2" data-icon="folder" data-router="article"></a>
+            </nav>
+        </footer>
+    </section>
+    <!-- Fin de tu app -->
+    
+    <!-- Webapp libraries -->
+    <script src="components/base.js"></script>
+    <!-- Lungo - Dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <!-- Lungo - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Ejemplo Firefox OS App'
+        });
+    </script>
+</body>
+</html>
